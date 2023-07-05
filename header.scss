@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 84px 0;
+    margin-top: 50px;
     text-transform: uppercase;
     @include montserrat-bold(12px);
 }
@@ -38,7 +38,7 @@
 
 .nav-list__item {
     cursor: pointer;
-    
+
     &:not(:last-child) {
         margin-right: 41px;
     }

@@ -1,6 +1,7 @@
 $bg-color: #343045;
 $text-color-main: #FFFFFF;
 $text-color: #343045;
+$contacts-border-color: #C0B7E854;
 
 @mixin montserrat-bold($size){
     font-family: 'Montserrat', sans-serif;
@@ -23,4 +24,6 @@ $text-color: #343045;
 .container {
     background-color: $bg-color;
     color: $text-color-main;
+    margin-left: 84px;
+    margin-right: 84px;
 }
