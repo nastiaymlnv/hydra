@@ -1,0 +1,61 @@
+.container {
+  background-color: #343045;
+  color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 84px 0;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 102px;
+  height: 103px;
+  margin-right: 15px;
+}
+
+.logo-name {
+  height: 46px;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item {
+  cursor: pointer;
+}
+.nav-list__item:not(:last-child) {
+  margin-right: 41px;
+}
+
+.contact-btn {
+  padding: 17px 36px;
+  margin-right: 38px;
+  border-radius: 40px;
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.join-btn {
+  padding: 17px 36px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  color: #343045;
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */
