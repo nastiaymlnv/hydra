@@ -57,9 +57,5 @@
 }
 
 .join-btn {
-    padding: 17px 36px;
-    border-radius: 40px;
-    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-    color: $text-color;
-    cursor: pointer;
+    @include gradient-btn();
 }

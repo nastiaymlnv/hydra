@@ -42,3 +42,62 @@
 .contacts-list__item-text {
     @include montserrat-regular(14px);
 }
+
+.about-container {
+    margin-top: 90px;
+}
+
+.about-list {
+    @include montserrat-regular(16px);
+}
+
+.about-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child {
+        margin-bottom: 97px;
+    }
+
+    &:first-child {
+        .about-list__item-title::after{
+            content: url('../img/arrow-long-right.svg');
+            margin-left: 40px;
+            position: absolute;
+        }
+
+        .about-list__item-title .about-list__text-accent {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.about-list__item-title {
+    @include montserrat-light(36px);
+    position: relative;
+}
+
+.about-list__text-accent {
+    @include montserrat-bold(36px);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.about-list__item-content {
+    width: 630px;
+    line-height: normal;
+    margin-top: 42px;
+    margin-bottom: 28px;
+}
+
+.about-list__image {
+    width: 524px;
+    height: 557px;
+}
+
+.about-list__item-btn {
+    @include montserrat-bold(12px);
+    @include gradient-btn();
+}

@@ -21,6 +21,14 @@ $contacts-border-color: #C0B7E854;
     font-size: $size;
 }
 
+@mixin gradient-btn(){
+    padding: 17px 36px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    color: $text-color;
+    cursor: pointer;
+}
+
 .container {
     background-color: $bg-color;
     color: $text-color-main;
