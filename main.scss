@@ -49,6 +49,7 @@
 
 .about-list {
     @include montserrat-regular(16px);
+    position: relative;
 }
 
 .about-list__item {
@@ -100,4 +101,10 @@
 .about-list__item-btn {
     @include montserrat-bold(12px);
     @include gradient-btn();
+}
+
+.about-list__item-image{
+    position: absolute;
+    bottom: 30px;
+    z-index: -1;
 }

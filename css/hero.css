@@ -12,9 +12,22 @@
   align-items: center;
 }
 
+.hero-bg-vector_left {
+  position: absolute;
+  left: 0;
+  top: 290px;
+  z-index: -1;
+}
+
+.hero-bg-vector_right {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  z-index: -1;
+}
+
 .hero-content {
   max-width: 510px;
-  background: no-repeat url("./img/hero-bg-lines-content.svg");
 }
 
 .hero-content__title {
