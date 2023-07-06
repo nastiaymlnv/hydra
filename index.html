@@ -14,31 +14,45 @@
 <body class="container">
     <header class="header">
         <section class="logo-container">
-            <img src="./img/Logo-icon.svg" alt="Hydra icon" class="logo-icon">
-            <img src="./img/Logo-name.svg" alt="Hydra" class="logo-name">
+            <a href="/" class="logo__link">
+                <img src="./img/Logo-icon.svg" alt="Hydra icon" class="logo-icon">
+                <img src="./img/Logo-name.svg" alt="Hydra" class="logo-name">
+            </a>
         </section>
         <nav class="nav-container">
             <ul class="nav-list">
                 <li class="nav-list__item">
-                    About
+                    <a href="#about" class="nav-list__link">
+                        About
+                    </a>
                 </li>
                 <li class="nav-list__item">
-                    Services
+                    <a href="#services" class="nav-list__link">
+                        Services
+                    </a>
                 </li>
                 <li class="nav-list__item">
-                    Technologies
+                    <a href="#technologies" class="nav-list__link">
+                        Technologies
+                    </a>
                 </li>
                 <li class="nav-list__item">
-                    How to
+                    <a href="#how" class="nav-list__link">
+                        How to
+                    </a>
                 </li>
             </ul>
         </nav>
         <section class="btn-container">
             <button class="contact-btn">
-                Contact us
+                <a href="#contacts" class="nav-list__link">
+                    Contact us
+                </a>
             </button>
             <button class="join-btn">
-                Join Hydra
+                <a href="#join" class="nav-list__link">
+                    Join Hydra
+                </a>
             </button>
         </section>
     </header>
@@ -68,7 +82,7 @@
         <img src="./img/hero-image.png" alt="person in VR" class="hero-image">
     </article>
     <main class="main-container">
-        <article class="contacts">
+        <article id="contacts" class="contacts">
             <ul class="contacts-list">
                 <li class="contacts-list__item">
                     <img src="./img/location-icon.svg" alt="location" class="contacts-list__item-icon">
