@@ -22,6 +22,8 @@ $contacts-border-color: #C0B7E854;
 }
 
 @mixin gradient-btn(){
+    @include montserrat-bold(12px);
+    text-transform: uppercase;
     padding: 17px 36px;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);

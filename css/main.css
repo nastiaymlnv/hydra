@@ -107,6 +107,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 12px;
+  text-transform: uppercase;
   padding: 17px 36px;
   border-radius: 40px;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
@@ -117,5 +118,108 @@
 .about-list__item-image {
   position: absolute;
   bottom: 30px;
+  z-index: -1;
+}
+
+.services-container {
+  margin-top: 111px;
+}
+
+.services-why-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-why-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  position: relative;
+}
+.services-why-section-title::after {
+  content: url("../img/arrow-long-right.svg");
+  margin-left: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.services-why-section__text-accent {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.services-why-section_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  width: 652px;
+}
+
+.services-list-container {
+  margin-top: 107px;
+  position: relative;
+}
+
+.services-list {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+  display: flex;
+}
+
+.sevices-list__item {
+  text-align: center;
+  border-radius: 40px;
+  background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+  padding: 23px 35px 40px 25px;
+}
+.sevices-list__item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.services-list__item-image {
+  border-radius: 50%;
+  border: 14px solid rgba(14, 14, 14, 0.32);
+  margin-bottom: 21px;
+}
+
+.services-list__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(192, 183, 232, 0.33);
+  display: inline-block;
+  padding-bottom: 17.5px;
+}
+
+.services-list__item-info {
+  margin-top: 21.5px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.services-list__item-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 17px 36px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  color: #343045;
+  cursor: pointer;
+}
+
+.services-bg-vector {
+  position: absolute;
+  bottom: -250px;
   z-index: -1;
 }/*# sourceMappingURL=main.css.map */

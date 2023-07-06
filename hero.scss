@@ -48,7 +48,6 @@
 
 .hero-content__btn {
     color: $bg-color;
-    @include montserrat-bold(12px);
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     padding: 17px 40px;
