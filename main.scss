@@ -1,8 +1,5 @@
 @use 'style' as *;
 
-.main-container {
-}
-
 .contacts {
     margin-top: 116px;
     padding: 49px 80px 48px 39px;
@@ -77,12 +74,16 @@
 
 .about-list__item-title {
     @include montserrat-light(36px);
+    text-transform: uppercase;
     position: relative;
 }
 
-.about-list__text-accent {
+.text-accent {
     @include montserrat-bold(36px);
     display: inline-block;
+}
+
+.about-list__text-accent {
     margin-bottom: 5px;
 }
 
@@ -120,7 +121,9 @@
 
 .services-why-section-title {
     @include montserrat-light(36px);
+    text-transform: uppercase;
     position: relative;
+
     &::after{
         content: url('../img/arrow-long-right.svg');
         margin-left: 40px;
@@ -130,9 +133,7 @@
     }
 }
 
-.services-why-section__text-accent {
-    @include montserrat-bold(36px);
-    display: inline-block;
+.services-why-section-title-accent {
     margin-bottom: 15px;
 }
 
@@ -164,10 +165,6 @@
     }
 }
 
-.services-list__item-image-container {
-
-}
-
 .services-list__item-image {
     border-radius: 50%;
     border: 14px solid rgba(14, 14, 14, 0.32);
@@ -196,4 +193,49 @@
     position: absolute;
     bottom: -250px;
     z-index: -1;
+}
+
+.technologies-container {
+    margin-top: 114px;
+}
+
+.technologies-title-container {
+    position: relative;
+}
+
+.technologies-title {
+    @include montserrat-light(36px);
+    text-transform: uppercase;
+    padding: 108px 300px 96px 300px;
+    background-image: url('../img/technologies-title-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.technologies-title-accent {
+    margin-bottom: 11px;
+}
+
+.technologies-btn {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 15px solid rgba(14, 14, 14, 0.32);
+    cursor: pointer;
+}
+
+.technologies-btn__icon {
+    padding: 25.5px 21px;
+    background: linear-gradient(268deg, #C0B7E8 0%, #8176AF 100%);
+    border-radius: 50%;
+}
+
+.technologies-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 45px;
 }

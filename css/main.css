@@ -80,14 +80,18 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 36px;
+  text-transform: uppercase;
   position: relative;
 }
 
-.about-list__text-accent {
+.text-accent {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 36px;
   display: inline-block;
+}
+
+.about-list__text-accent {
   margin-bottom: 5px;
 }
 
@@ -135,6 +139,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 36px;
+  text-transform: uppercase;
   position: relative;
 }
 .services-why-section-title::after {
@@ -145,11 +150,7 @@
   transform: translateY(-50%);
 }
 
-.services-why-section__text-accent {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  display: inline-block;
+.services-why-section-title-accent {
   margin-bottom: 15px;
 }
 
@@ -222,4 +223,51 @@
   position: absolute;
   bottom: -250px;
   z-index: -1;
+}
+
+.technologies-container {
+  margin-top: 114px;
+}
+
+.technologies-title-container {
+  position: relative;
+}
+
+.technologies-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 108px 300px 96px 300px;
+  background-image: url("../img/technologies-title-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.technologies-title-accent {
+  margin-bottom: 11px;
+}
+
+.technologies-btn {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: 15px solid rgba(14, 14, 14, 0.32);
+  cursor: pointer;
+}
+
+.technologies-btn__icon {
+  padding: 25.5px 21px;
+  background: linear-gradient(268deg, #C0B7E8 0%, #8176AF 100%);
+  border-radius: 50%;
+}
+
+.technologies-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 45px;
 }/*# sourceMappingURL=main.css.map */
