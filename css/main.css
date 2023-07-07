@@ -270,4 +270,83 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 45px;
+}
+
+.process-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.process-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+  position: relative;
+}
+.process-title::after {
+  content: url("../img/arrow-long-right.svg");
+  margin-left: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.process-title-accent {
+  margin-bottom: 15px;
+}
+
+.process__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  width: 652px;
+}
+
+.process-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 124px;
+  position: relative;
+}
+
+.process-list__item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  max-width: 200px;
+}
+
+.process-list__item-step-wrapper {
+  border: 19.5px solid rgba(13, 13, 13, 0.32);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.process-list__item-step {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #343045;
+  padding: 41px 41px 40px 37px;
+  background: linear-gradient(251deg, #C0B7E8 0%, #8176AF 100%);
+  border-radius: 50%;
+}
+
+.process-list__item-info {
+  display: flex;
+  margin-top: 25px;
+}
+
+.process-list__item-arrow {
+  width: 28px;
+  height: 22px;
+  margin-right: 15px;
+}
+
+.process-list__bg {
+  position: absolute;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */
