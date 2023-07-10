@@ -1,6 +1,5 @@
 $bg-color: #343045;
-$text-color-main: #FFFFFF;
-$text-color: #343045;
+$bg-color-main: #FFFFFF;
 $contacts-border-color: #C0B7E854;
 
 @mixin montserrat-bold($size){
@@ -27,13 +26,13 @@ $contacts-border-color: #C0B7E854;
     padding: 17px 36px;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-    color: $text-color;
+    color: $bg-color;
     cursor: pointer;
 }
 
 .container {
     background-color: $bg-color;
-    color: $text-color-main;
+    color: $bg-color-main;
     margin-left: 84px;
     margin-right: 84px;
 }

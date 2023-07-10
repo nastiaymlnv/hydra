@@ -76,6 +76,7 @@
     @include montserrat-light(36px);
     text-transform: uppercase;
     position: relative;
+    margin-left: 10px;
 }
 
 .text-accent {
@@ -88,10 +89,11 @@
 }
 
 .about-list__item-content {
-    width: 630px;
+    max-width: 630px;
     line-height: normal;
     margin-top: 42px;
     margin-bottom: 28px;
+    margin-left: 10px;
 }
 
 .about-list__image {
@@ -256,6 +258,7 @@
 
     &::after{
         content: url('../img/arrow-long-right.svg');
+        min-width: 150px;
         margin-left: 16px;
         position: absolute;
         top: 50%;
@@ -270,7 +273,7 @@
 .process__text {
     @include montserrat-regular(16px);
     line-height: normal;
-    width: 652px;
+    max-width: 650px;
 }
 
 .process-list {
@@ -368,7 +371,7 @@
 .email-form__input {
     padding: 27px 42px;
     border-radius: 40px;
-    border: 2px solid $text-color-main;
+    border: 2px solid $bg-color-main;
     @include montserrat-regular(14px);
 
 }

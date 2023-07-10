@@ -1,0 +1,77 @@
+@use 'style' as *;
+
+@media screen and (max-width: 1120px) {
+    .container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+
+    .contact-btn {
+        margin-right: 5px;
+    }
+
+    .nav-list__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        margin-top: 25px;
+    }
+
+    .btn-container {
+        display: none;
+    }
+
+    .humburger-btn {
+        right: 0;
+        width: 24px;
+        height: 3.7px;
+        border-radius: 40px;
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+        position: relative;
+
+        &::before,  &::after{
+            content: '';
+            width: 33px;
+            height: 3.7px;
+            border-radius: 40px;
+            background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+            position: absolute;
+            right: 0;
+        }
+
+        &::before {
+            top: -7.43px;
+        }
+
+        &::after {
+            bottom: -7.43px;
+        }
+    }
+
+    .hamburger-container {
+        display: none;
+    }
+
+    .hamburger-container_visible {
+        display: block;
+    }
+
+    .hamburger-list {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+        top: 0;
+        background: radial-gradient(50.00% 50.00% at 50.00% 50.00%, #433D60 0%, #211E2E 100%);
+        padding: 70px;
+        text-align: center;
+    }
+
+    .hamburger-list_item {
+        margin-bottom: 20px;
+    }
+}

@@ -82,6 +82,7 @@
   font-size: 36px;
   text-transform: uppercase;
   position: relative;
+  margin-left: 10px;
 }
 
 .text-accent {
@@ -96,10 +97,11 @@
 }
 
 .about-list__item-content {
-  width: 630px;
+  max-width: 630px;
   line-height: normal;
   margin-top: 42px;
   margin-bottom: 28px;
+  margin-left: 10px;
 }
 
 .about-list__image {
@@ -286,6 +288,7 @@
 }
 .process-title::after {
   content: url("../img/arrow-long-right.svg");
+  min-width: 150px;
   margin-left: 16px;
   position: absolute;
   top: 50%;
@@ -301,7 +304,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
-  width: 652px;
+  max-width: 650px;
 }
 
 .process-list {
