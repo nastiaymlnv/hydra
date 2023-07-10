@@ -354,7 +354,36 @@
                     </li>
                 </ul>
             </section>
+            <article class="email-container" id="form">
+                <h3 class="email-title">
+                    Join Hydra
+                </h3>
+                <img src="./img/mail-title-separator.svg" alt="" class="email-title-separator">
+                <h4 class="email-subtitle">
+                    Let’s Build Your VR Experience
+                </h4>
+                <form class="email-form" id="form">
+                    <section class="email-form__inputs-group">
+                        <div class="email-form__user-info-group">
+                            <input class="email-form__input email-form__input_user-info" type="text" placeholder = "First Name">
+                            <input class="email-form__input email-form__input_user-info" type="text" placeholder = "Last Name">
+                            <input class="email-form__input email-form__input_user-info" type="email" placeholder = "Email">
+                            <input class="email-form__input email-form__input_user-info" type="tel" placeholder = "Phome Number">
+                        </div>
+                        <input class="email-form__input" type="text" placeholder = "Subject">
+                        <input class="email-form__input" type="text" placeholder = "Tell Us Something...">
+                    </section>
+                    <button class="email-submit-btn">
+                        Send to Hydra
+                    </button>
+                </form>
+            </article>
         </section>
     </main>
+    <script>
+        document.getElementById("form").addEventListener("click", function(e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>

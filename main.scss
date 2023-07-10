@@ -312,10 +312,75 @@
 }
 
 .process-list__item-content {
-    // line-height: 1.5;
+    
 }
 
 .process-list__bg {
     position: absolute;
     z-index: -1;
+}
+
+.email-container {
+    margin-top: 112px;
+    padding: 90px 110px 84px 107px;
+    border-radius: 100px;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, #403A5F 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.email-title {
+    @include montserrat-bold(36px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.email-title-separator {
+    width: 414px;
+    height: 2px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 21px;
+}
+
+.email-subtitle {
+    @include montserrat-regular(36px);
+    text-align: center;
+}
+
+.email-form {
+    margin-top: 65px;
+}
+
+.email-form__inputs-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 33px;
+}
+
+.email-form__user-info-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px 10px;
+}
+
+.email-form__input {
+    padding: 27px 42px;
+    border-radius: 40px;
+    border: 2px solid $text-color-main;
+    @include montserrat-regular(14px);
+
+}
+
+.email-form__input_user-info {
+    width: 40%;
+    flex-grow: 1;
+}
+
+.email-submit-btn {
+    @include gradient-btn();
+    display: block;
+    margin: 0 auto;
+    margin-top: 51px;
 }
