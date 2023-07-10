@@ -95,8 +95,8 @@
 }
 
 .about-list__image {
-    width: 524px;
-    height: 557px;
+    max-width: 524px;
+    max-height: 557px;
 }
 
 .about-list__item-btn {
@@ -312,7 +312,7 @@
 }
 
 .process-list__item-content {
-    
+
 }
 
 .process-list__bg {
