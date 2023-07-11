@@ -30,6 +30,12 @@ $contacts-border-color: #C0B7E854;
     cursor: pointer;
 }
 
+@mixin gradient-btn-adaptive(){
+    font-size: 14px;
+    padding-left: 68px;
+    padding-right: 68px;
+}
+
 .container {
     background-color: $bg-color;
     color: $bg-color-main;

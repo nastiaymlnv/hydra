@@ -67,7 +67,9 @@
                 <span class="hero-content__title_gradient">
                     Dive
                 </span>
-                Into The Depths Of
+                Into The Depths
+                <br/>
+                Of
                 <span class="hero-content__title_gradient">
                     Virtual Reality
                 </span>
@@ -89,6 +91,9 @@
     </article>
     <main class="main-container">
         <article id="contacts" class="contacts">
+            <button class="contacts-pagination contacts-pagination_prev">
+                <img src="./img/pagination-previous-contacts.svg" alt="" class="contacts-pagination-icon">
+            </button>
             <ul class="contacts-list">
                 <li class="contacts-list__item">
                     <img src="./img/location-icon.svg" alt="location" class="contacts-list__item-icon">
@@ -124,6 +129,9 @@
                     </div>
                 </li>
             </ul>
+            <button class="contacts-pagination contacts-pagination_next">
+                <img src="./img/pagination-next-contacts.svg" alt="" class="contacts-pagination-icon">
+            </button>
         </article>
         <section id="about" class="about-container">
             <ul class="about-list">
@@ -144,8 +152,8 @@
                 </li>
                 <li class="about-list__item">
                     <img src="./img/about-section-image.png" alt="men in VR" class="about-list__image">
-                    <div class="about-list__item-content">
-                        <h3 class="about-list__item-title">
+                    <div class="about-list__item-content-container">
+                        <h3 class="about-list__item-title about-list__item-title_main">
                             <span class="text-accent about-list__text-accent">
                                 About
                             </span>
@@ -176,7 +184,7 @@
         <section id="services" class="services-container">
             <section class="services-why-section">
                 <h3 class="services-why-section-title">
-                    <span class=" text-accent services-why-section-title-accent">
+                    <span class="text-accent services-why-section-title-accent">
                         Why build
                     </span>
                     <br/>
@@ -190,72 +198,80 @@
                 </p>
             </section>
             <article class="services-list-container">
-                <ul class="services-list">
-                    <li class="sevices-list__item">
-                        <div class="services-list__item-image-container">
-                            <img src="./img/services-card-img1.png" alt="simulation" class="services-list__item-image">
-                        </div>
-                        <h3 class="services-list__item-title">
-                            Simulation
-                        </h3>
-                        <p class="services-list__item-info">
-                            Vitae sapien pellentesque habitant morbi
-                            nunc. Viverra aliquet  porttitor rhoncus
-                            libero justo laoreet sit amet vitae.
-                        </p>
-                        <button class="services-list__item-btn">
-                            Try it now
-                        </button>
-                    </li>
-                    <li class="sevices-list__item">
-                        <div class="services-list__item-image-container">
-                            <img src="./img/services-card-img2.png" alt="education" class="services-list__item-image">
-                        </div>
-                        <h3 class="services-list__item-title">
-                            Education
-                        </h3>
-                        <p class="services-list__item-info">
-                            Vitae sapien pellentesque habitant morbi
-                            nunc. Viverra aliquet  porttitor rhoncus
-                            libero justo laoreet sit amet vitae.
-                        </p>
-                        <button class="services-list__item-btn">
-                            Try it now
-                        </button>
-                    </li>
-                    <li class="sevices-list__item">
-                        <div class="services-list__item-image-container">
-                            <img src="./img/services-card-img3.png" alt="selfcare" class="services-list__item-image">
-                        </div>
-                        <h3 class="services-list__item-title">
-                            Self-care
-                        </h3>
-                        <p class="services-list__item-info">
-                            Vitae sapien pellentesque habitant morbi
-                            nunc. Viverra aliquet  porttitor rhoncus
-                            libero justo laoreet sit amet vitae.
-                        </p>
-                        <button class="services-list__item-btn">
-                            Try it now
-                        </button>
-                    </li>
-                    <li class="sevices-list__item">
-                        <div class="services-list__item-image-container">
-                            <img src="./img/services-card-img4.png" alt="outdoor" class="services-list__item-image">
-                        </div>
-                        <h3 class="services-list__item-title">
-                            Outdoor
-                        </h3>
-                        <p class="services-list__item-info">
-                            Vitae sapien pellentesque habitant morbi
-                            nunc. Viverra aliquet  porttitor rhoncus
-                            libero justo laoreet sit amet vitae.
-                        </p>
-                        <button class="services-list__item-btn">
-                            Try it now
-                        </button>
-                    </li>
-                </ul>
+                <div class="services-list-wrapper">
+                    <button class="services-pagination services-pagination_prev">
+                        <img src="./img/arrow-down.svg" alt="" class="services-pagination-icon">
+                    </button>
+                    <ul class="services-list">
+                        <li class="sevices-list__item">
+                            <div class="services-list__item-image-container">
+                                <img src="./img/services-card-img1.png" alt="simulation" class="services-list__item-image">
+                            </div>
+                            <h3 class="services-list__item-title">
+                                Simulation
+                            </h3>
+                            <p class="services-list__item-info">
+                                Vitae sapien pellentesque habitant morbi
+                                nunc. Viverra aliquet  porttitor rhoncus
+                                libero justo laoreet sit amet vitae.
+                            </p>
+                            <button class="services-list__item-btn">
+                                Try it now
+                            </button>
+                        </li>
+                        <li class="sevices-list__item">
+                            <div class="services-list__item-image-container">
+                                <img src="./img/services-card-img2.png" alt="education" class="services-list__item-image">
+                            </div>
+                            <h3 class="services-list__item-title">
+                                Education
+                            </h3>
+                            <p class="services-list__item-info">
+                                Vitae sapien pellentesque habitant morbi
+                                nunc. Viverra aliquet  porttitor rhoncus
+                                libero justo laoreet sit amet vitae.
+                            </p>
+                            <button class="services-list__item-btn">
+                                Try it now
+                            </button>
+                        </li>
+                        <li class="sevices-list__item">
+                            <div class="services-list__item-image-container">
+                                <img src="./img/services-card-img3.png" alt="selfcare" class="services-list__item-image">
+                            </div>
+                            <h3 class="services-list__item-title">
+                                Self-care
+                            </h3>
+                            <p class="services-list__item-info">
+                                Vitae sapien pellentesque habitant morbi
+                                nunc. Viverra aliquet  porttitor rhoncus
+                                libero justo laoreet sit amet vitae.
+                            </p>
+                            <button class="services-list__item-btn">
+                                Try it now
+                            </button>
+                        </li>
+                        <li class="sevices-list__item">
+                            <div class="services-list__item-image-container">
+                                <img src="./img/services-card-img4.png" alt="outdoor" class="services-list__item-image">
+                            </div>
+                            <h3 class="services-list__item-title">
+                                Outdoor
+                            </h3>
+                            <p class="services-list__item-info">
+                                Vitae sapien pellentesque habitant morbi
+                                nunc. Viverra aliquet  porttitor rhoncus
+                                libero justo laoreet sit amet vitae.
+                            </p>
+                            <button class="services-list__item-btn">
+                                Try it now
+                            </button>
+                        </li>
+                    </ul>
+                    <button class="services-pagination services-pagination_next">
+                        <img src="./img/arrow-down.svg" alt="" class="services-pagination-icon">
+                    </button>
+                </div>
                 <img src="./img/services-section-line-bg.svg" alt="" class="services-bg-vector">
             </article>
             <section id="technologies" class="technologies-container">

@@ -1,11 +1,27 @@
 @use 'style' as *;
 
+@media screen and (max-width: 1320px){
+    .about-list__item {
+        &:first-child {
+            .about-list__item-title::after{
+                content: '';
+            }
+        }
+    }
+
+    .services-why-section-title {
+
+        &::after{
+            content: '';
+        }
+    }
+}
+
 @media screen and (max-width: 1120px) {
     .container {
         margin-left: 40px;
         margin-right: 40px;
     }
-
 
     .contact-btn {
         margin-right: 5px;
@@ -16,7 +32,109 @@
     }
 }
 
+@media screen and (max-width: 1040px){
+    .about-container {
+        margin-top: 59px;
+    }
+
+    .about-list__item {
+
+        &:first-child {
+            margin-bottom: 36px;
+        }
+    }
+
+    .about-list__item {
+
+        &:first-child {
+            .about-list__item-content {
+                display: none;
+            }
+        }
+    }
+
+    .about-list__item-title {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-list__image {
+        margin: 0 auto;
+    }
+
+    .services-container {
+        margin-top: 60px;
+    }
+
+    .services-why-section_text {
+        display: none;
+    }
+
+    .services-why-section-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .services-list-container {
+        margin-top: 26px;
+    }
+
+
+}
+
+@media screen and (max-width: 970px) {
+    .contacts {
+        display: flex;
+        justify-content: center;
+        margin-top: 71px;
+        height: 109px;
+        box-sizing: border-box;
+    }
+
+    .contacts-list {
+        justify-content: center;
+    }
+
+    .contacts-list__item-title {
+        display: none;
+    }
+
+    .contacts-list__item {
+
+        &:not(:first-child) {
+            border-left: none;
+        }
+    }
+
+    .services-list__item_hidden {
+        display: none;
+    }
+
+    .services-pagination {
+        display: block;
+    }
+
+    .services-list-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .services-list {
+        max-width: 620px;
+    }
+
+    .services-bg-vector {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 900px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .header {
         margin-top: 25px;
     }
@@ -32,8 +150,10 @@
         border-radius: 40px;
         background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
         position: relative;
+        transition: all 0.2s;
 
         &::before,  &::after{
+            display: block;
             content: '';
             width: 33px;
             height: 3.7px;
@@ -49,6 +169,20 @@
 
         &::after {
             bottom: -7.43px;
+        }
+    }
+
+    .humburger-btn_open {
+        transform: rotate(45deg);
+        width: 33px;
+
+        &::before{
+            transform: rotate(90deg);
+            top: 0;
+        }
+
+        &::after {
+            display: none;
         }
     }
 
@@ -74,4 +208,73 @@
     .hamburger-list_item {
         margin-bottom: 20px;
     }
+
+    .about-list__item {
+        flex-direction: column;
+    }
+
+    .about-list__item-title_main {
+        display: none;
+    }
+
+    .about-list__item-content {
+        margin: 51px 0 34px;
+    }
+
+    .about-list__item-btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-list__item-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .hero-bg-vector_left {
+        display: none;
+    }
+
+    .hero-bg-vector_right {
+        right: auto;
+        top: -40px;
+        opacity: 0.4;
+    }
+
+    .hero-content {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .hero-content__title {
+        line-height: 1.5;
+        margin-bottom: 36px;
+    }
+
+    .hero-content__title {
+        font-size: 24px;
+    }
+
+    .hero-content__title_gradient {
+        font-size: 36px;
+    }
+
+    .hero-content__text, .hero-content__btn-arrow {
+        display: none;
+    }
+
+    .hero-content__btn {
+        margin: 0 auto;
+    }
+
+    .hero-content__btn, .about-list__item-btn {
+        @include gradient-btn-adaptive();
+    }
+
 }
