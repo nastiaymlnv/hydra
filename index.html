@@ -6,7 +6,7 @@
     <title>Hydra</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/main.css">
@@ -151,7 +151,9 @@
                     </p>
                 </li>
                 <li class="about-list__item">
-                    <img src="./img/about-section-image.png" alt="men in VR" class="about-list__image">
+                    <div class="about-list__image-wrapper">
+                        <img src="./img/about-section-image.png" alt="men in VR" class="about-list__image">
+                    </div>
                     <div class="about-list__item-content-container">
                         <h3 class="about-list__item-title about-list__item-title_main">
                             <span class="text-accent about-list__text-accent">
@@ -199,8 +201,8 @@
             </section>
             <article class="services-list-container">
                 <div class="services-list-wrapper">
-                    <button class="services-pagination services-pagination_prev">
-                        <img src="./img/arrow-down.svg" alt="" class="services-pagination-icon">
+                    <button class="pagination-services-btn pagination-btn pagination-btn_prev">
+                        <img src="./img/arrow-down.svg" alt="" class="pagination-btn-icon">
                     </button>
                     <ul class="services-list">
                         <li class="sevices-list__item">
@@ -268,8 +270,8 @@
                             </button>
                         </li>
                     </ul>
-                    <button class="services-pagination services-pagination_next">
-                        <img src="./img/arrow-down.svg" alt="" class="services-pagination-icon">
+                    <button class="pagination-services-btn pagination-btn pagination-btn_next">
+                        <img src="./img/arrow-down.svg" alt="" class="pagination-btn-icon">
                     </button>
                 </div>
                 <img src="./img/services-section-line-bg.svg" alt="" class="services-bg-vector">
@@ -287,20 +289,28 @@
                         <img src="./img/arrow-down.svg" alt="arrow down" class="technologies-btn__icon">
                     </button>
                 </div>
-                <ul class="technologies-list">
-                    <li class="technologies-list__item">
-                        <img src="./img/unreal-engine.png" alt="unreal engine" class="technologies-list__item-image">
-                    </li>
-                    <li class="technologies-list__item">
-                        <img src="./img/unity.png" alt="unity" class="technologies-list__item-image">
-                    </li>
-                    <li class="technologies-list__item">
-                        <img src="./img/oculus.png" alt="oculus" class="technologies-list__item-image">
-                    </li>
-                    <li class="technologies-list__item">
-                        <img src="./img/vive.png" alt="vivo" class="technologies-list__item-image">
-                    </li>
-                </ul>
+                <div class="technologies-list-wrapper">
+                    <button class="pagination-technologies-btn pagination-btn pagination-btn_prev">
+                        <img src="./img/arrow-down.svg" alt="" class="pagination-btn-icon">
+                    </button>
+                    <ul class="technologies-list">
+                        <li class="technologies-list__item">
+                            <img src="./img/unreal-engine.png" alt="unreal engine" class="technologies-list__item-image">
+                        </li>
+                        <li class="technologies-list__item">
+                            <img src="./img/unity.png" alt="unity" class="technologies-list__item-image">
+                        </li>
+                        <li class="technologies-list__item">
+                            <img src="./img/oculus.png" alt="oculus" class="technologies-list__item-image">
+                        </li>
+                        <li class="technologies-list__item">
+                            <img src="./img/vive.png" alt="vivo" class="technologies-list__item-image">
+                        </li>
+                    </ul>
+                    <button class="pagination-technologies-btn pagination-btn pagination-btn_next">
+                        <img src="./img/arrow-down.svg" alt="" class="pagination-btn-icon">
+                    </button>
+                </div>                
             </section>
             <section id="how" class="process-container">
                 <section class="process-description">
@@ -318,61 +328,69 @@
                         lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
                     </p>
                 </section>
-                <ul class="process-list">
-                    <img src="./img/process-steps-bg.svg" alt="" class="process-list__bg">
-                    <li class="process-list__item">
-                        <div class="process-list__item-step-wrapper">
-                            <p class="process-list__item-step">
-                                01
-                            </p>
-                        </div>
-                        <div class="process-list__item-info">
-                            <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
-                            <p class="process-list__item-content">
-                                3D Conception & Design
-                            </p>
-                        </div>
-                    </li>
-                    <li class="process-list__item">
-                        <div class="process-list__item-step-wrapper">
-                            <p class="process-list__item-step">
-                                02
-                            </p>
-                        </div>
-                        <div class="process-list__item-info">
-                            <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
-                            <p class="process-list__item-content">
-                                Interaction Design
-                            </p>
-                        </div>
-                    </li>
-                    <li class="process-list__item">
-                        <div class="process-list__item-step-wrapper">
-                            <p class="process-list__item-step">
-                                03
-                            </p>
-                        </div>
-                        <div class="process-list__item-info">
-                            <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
-                            <p class="process-list__item-content">
-                                VR World User Testing
-                            </p>
-                        </div>
-                    </li>
-                    <li class="process-list__item">
-                        <div class="process-list__item-step-wrapper">
-                            <p class="process-list__item-step">
-                                04
-                            </p>
-                        </div>
-                        <div class="process-list__item-info">
-                            <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
-                            <p class="process-list__item-content">
-                                Hydra VR Deploy
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="process-list-wrapper">
+                    <button class="pagination-processes-btn pagination-btn pagination-btn_prev">
+                        <img src="./img/arrow-down.svg" alt="" class="pagination-btn-icon">
+                    </button>
+                    <ul class="process-list">
+                        <img src="./img/process-steps-bg.svg" alt="" class="process-list__bg">
+                        <li class="process-list__item">
+                            <div class="process-list__item-step-wrapper">
+                                <p class="process-list__item-step">
+                                    01
+                                </p>
+                            </div>
+                            <div class="process-list__item-info">
+                                <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
+                                <p class="process-list__item-content">
+                                    3D Conception & Design
+                                </p>
+                            </div>
+                        </li>
+                        <li class="process-list__item">
+                            <div class="process-list__item-step-wrapper">
+                                <p class="process-list__item-step">
+                                    02
+                                </p>
+                            </div>
+                            <div class="process-list__item-info">
+                                <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
+                                <p class="process-list__item-content">
+                                    Interaction Design
+                                </p>
+                            </div>
+                        </li>
+                        <li class="process-list__item">
+                            <div class="process-list__item-step-wrapper">
+                                <p class="process-list__item-step">
+                                    03
+                                </p>
+                            </div>
+                            <div class="process-list__item-info">
+                                <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
+                                <p class="process-list__item-content">
+                                    VR World User Testing
+                                </p>
+                            </div>
+                        </li>
+                        <li class="process-list__item">
+                            <div class="process-list__item-step-wrapper">
+                                <p class="process-list__item-step">
+                                    04
+                                </p>
+                            </div>
+                            <div class="process-list__item-info">
+                                <img src="./img/arrow-small-right.svg" alt="" class="process-list__item-arrow">
+                                <p class="process-list__item-content">
+                                    Hydra VR Deploy
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="pagination-processes-btn pagination-btn pagination-btn_next">
+                        <img src="./img/arrow-down.svg" alt="" class="pagination-btn-icon">
+                    </button>
+                </div>                
             </section>
             <article class="email-container" id="join">
                 <h3 class="email-title">
@@ -391,7 +409,7 @@
                             <input class="email-form__input email-form__input_user-info" type="tel" placeholder = "Phome Number">
                         </div>
                         <input class="email-form__input" type="text" placeholder = "Subject">
-                        <input class="email-form__input" type="text" placeholder = "Tell Us Something...">
+                        <input class="email-form__input email-form__input_big" type="text" placeholder = "Tell Us Something...">
                     </section>
                     <button class="email-submit-btn">
                         Send to Hydra
@@ -508,11 +526,5 @@
             2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED
         </p>
     </footer>
-
-    <script>
-        document.getElementById("form").addEventListener("click", function(e) {
-            e.preventDefault();
-        });
-    </script>
 </body>
 </html>

@@ -126,9 +126,13 @@
   margin-left: 10px;
 }
 
-.about-list__image {
+.about-list__image-wrapper {
   max-width: 524px;
   max-height: 557px;
+}
+
+.about-list__image {
+  width: 100%;
 }
 
 .about-list__item-btn {
@@ -195,7 +199,7 @@
   position: relative;
 }
 
-.services-pagination {
+.pagination-btn {
   display: none;
   position: absolute;
   top: 50%;
@@ -205,17 +209,17 @@
   cursor: pointer;
 }
 
-.services-pagination_prev {
+.pagination-btn_prev {
   left: 0;
-  transform: translateX(-50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.services-pagination_next {
+.pagination-btn_next {
   right: 0;
-  transform: translateX(50%) rotate(-90deg);
+  transform: translate(50%, -50%) rotate(-90deg);
 }
 
-.services-pagination-icon {
+.pagination-btn-icon {
   padding: 20px 14px;
   background: linear-gradient(268deg, #C0B7E8 0%, #8176AF 100%);
   border-radius: 50%;
@@ -292,11 +296,13 @@
   font-weight: 300;
   font-size: 36px;
   text-transform: uppercase;
-  padding: 108px 300px 96px 300px;
+  padding: 108px 90px 96px 90px;
   background-image: url("../img/technologies-title-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  border-radius: 160px;
 }
 
 .technologies-title-accent {
@@ -319,11 +325,15 @@
   border-radius: 50%;
 }
 
+.technologies-list-wrapper {
+  position: relative;
+  margin-top: 45px;
+}
+
 .technologies-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 45px;
 }
 
 .process-description {
@@ -359,11 +369,15 @@
   max-width: 650px;
 }
 
+.process-list-wrapper {
+  position: relative;
+  margin-top: 124px;
+}
+
 .process-list {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-top: 124px;
   position: relative;
 }
 
@@ -464,6 +478,10 @@
   font-size: 14px;
 }
 
+.email-form__input_big {
+  height: 210px;
+}
+
 .email-form__input_user-info {
   width: 40%;
   flex-grow: 1;
@@ -482,4 +500,8 @@
   display: block;
   margin: 0 auto;
   margin-top: 51px;
+}
+
+.pagination-btn_visible {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
