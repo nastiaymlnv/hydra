@@ -30,12 +30,6 @@ const handleNextContact = () => {
     }
 }
 
-// const handleDoubleServices = () => {
-//     for (let i = 0; i < servicesPaginationList.length; i++) {
-//         servicesPaginationList[i].classList.toggle('services-list__item_hidden');
-//     }
-// }
-
 const handleNextSingleService = () => {
     servicesPaginationList[currentService].style.display = "none";
 
@@ -84,21 +78,6 @@ const displayContact = () => {
 }
 
 const displayServices = () => {
-    // for two cards
-    // for (let i = servicesPaginationList.length - 1; i > servicesPaginationList.length / 2 - 1; i--) {
-    //     servicesPaginationList[i].classList.toggle('services-list__item_hidden');
-    // }
-
-    // for (elem of servicesPaginationBtns) {
-    //     if (elem.classList.contains('pagination-btn_prev')) {
-    //         elem.addEventListener("click", handleDoubleServices);
-    //     }
-    //     else {
-    //         elem.addEventListener("click", handleDoubleServices);
-    //     }
-    // }
-
-    // for one card
     for (let i = 1; i < servicesPaginationList.length; i++) {
         servicesPaginationList[i].style.display = "none";
     }
