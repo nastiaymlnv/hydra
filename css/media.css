@@ -81,6 +81,9 @@
   .about-container {
     margin-top: 59px;
   }
+  .about-list__item {
+    flex-direction: column;
+  }
   .about-list__item:first-child {
     margin-bottom: 36px;
   }
@@ -93,6 +96,19 @@
   }
   .about-list__image {
     margin: 0 auto;
+  }
+  .about-list__item-title_main {
+    display: none;
+  }
+  .about-list__item-content {
+    margin: 51px 0 34px;
+  }
+  .about-list__item-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-list__item-image {
+    display: none;
   }
   .services-container {
     margin-top: 60px;
@@ -238,22 +254,6 @@
   }
   .hamburger-list_item {
     margin-bottom: 20px;
-  }
-  .about-list__item {
-    flex-direction: column;
-  }
-  .about-list__item-title_main {
-    display: none;
-  }
-  .about-list__item-content {
-    margin: 51px 0 34px;
-  }
-  .about-list__item-btn {
-    display: block;
-    margin: 0 auto;
-  }
-  .about-list__item-image {
-    display: none;
   }
   .process-list-wrapper {
     margin-top: 37px;
